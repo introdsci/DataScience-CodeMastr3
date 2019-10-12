@@ -21,23 +21,31 @@ The survey size was small and could've been better but they are also drawing inf
 
 ```{r}
 
-library("haven")
+suppressMessages(library("tidyverse"))
+suppressMessages(library("haven"))
 path = file.path("C:", "Rdata", "Governance 2015.public.sav")
 dataset = read_sav(path)
 
-colnames(dataset)
+#colnames(dataset)
 ```
 
 The variables of the data set are mostly understandable and comes with a readme.txt and a topline.pdf that you can further look at when going to the link.
 
+I will make a new tibble snippet to mess around with and take certain variables and see where that takes me
+
 
 ```{r}
-library(tidyverse)
-ggplot()
+
+snippet <- filter(dataset, sex == 1 && q44 == 2)
+snippet <- select(snippet, sex, q44, everything())
+
+nrow(snippet)
 
 ```
 
-This 
+So this snippet I've made is just showing some interesting insights you can get from this data. I chose a random question which is 44 and made it so I can only see males that chose the answer 'a worse place to live' If the filter() function was working like the dplyr.tidyverse.org reference said it works then I could give you the number of occurences of those 2 things happening at the same time.
+
+`Q.44	On balance, do you think having an increasing number of people of many different races, ethnic groups and nationalities in the United States makes this country a better place to live, a worse place to live, or doesn’t make much difference either way? `
 
 ### 2. Model Planning and Building
 
