@@ -1,6 +1,6 @@
 ---
-title: " " #replace the title with something short and catchy to represent your project
-subtitle: "____'s Data Science Portfolio" #replace blank with your name
+title: "Trifecta of personality (Temp name)"
+subtitle: "Cody's Data Science Portfolio"
 output:
   html_document:
     df_print: paged
@@ -13,6 +13,31 @@ In under 250 words give a brief summary of the project so far.
 ### 1. Discovery and Data Preparation
 
 Provide a one-sentence introduction with what is covered by the first deliverable along with a link to another html page that gives the details.
+
+My motivation for this topic is I'm interested if there is a link between education, economic standing, and political standing.
+
+My source for my initial data is Pew Research Center, (https://www.people-press.org/dataset/2015-governance-survey/), which conducted a phone survey of more that 6,000 adults and also draws on data from other surveys they've done back to 1994.
+The survey size was small and could've been better but they are also drawing inferences from previous surveys to better extrapolate from the data.
+
+```{r}
+
+library("haven")
+path = file.path("C:", "Rdata", "Governance 2015.public.sav")
+dataset = read_sav(path)
+
+colnames(dataset)
+```
+
+The variables of the data set are mostly understandable and comes with a readme.txt and a topline.pdf that you can further look at when going to the link.
+
+
+```{r}
+
+ggplot()
+
+```
+
+This 
 
 ### 2. Model Planning and Building
 
