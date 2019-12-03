@@ -24,9 +24,11 @@ The survey size was small and could've been better but they are also drawing inf
 suppressMessages(library("tidyverse"))
 suppressMessages(library("haven"))
 # Add or change the strings to make a path to the file that you downloaded
-path = file.path("C:", "User", "(YOUR USERNAME HERE)", "Downloads", "Governance 2015.public.sav")
+path = file.path("/mnt", "storage", "stuff", "Rstudio", "385", "Portfolio", "Governance 2015.public.sav")
 dataset = read_sav(path)
 
+
+nrow(dataset)
 #colnames(dataset)
 ```
 
@@ -37,9 +39,10 @@ I will make a new tibble snippet to mess around with and take certain variables 
 
 ```{r}
 
-snippet <- dplyr::filter(dataset, sex == 1 && q44 == 2)
-#snippet <- dplyr::select(snippet, sex, q44, everything())
+snippet <- dplyr::filter(dataset, sex == 1 & q44 == 2)
+snippet <- dplyr::select(snippet, sex, q44, everything())
 
+snippet
 nrow(snippet)
 
 ```
@@ -47,12 +50,3 @@ nrow(snippet)
 So this snippet I've made is just showing some interesting insights you can get from this data. I chose a random question which is 44 and made it so I can only see males that chose the answer 'a worse place to live' If the filter() function was working like the dplyr.tidyverse.org reference said it works then I could give you the number of occurences of those 2 things happening at the same time.
 
 `Q.44	On balance, do you think having an increasing number of people of many different races, ethnic groups and nationalities in the United States makes this country a better place to live, a worse place to live, or doesn’t make much difference either way? `
-
-### 2. Model Planning and Building
-
-Coming soon...
-
-### 3. Results and Operationalization
-
-Coming soon...
-

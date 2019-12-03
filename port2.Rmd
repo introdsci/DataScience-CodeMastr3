@@ -1,0 +1,21 @@
+---
+title: "port2.rmd"
+author: "Cody Evans"
+date: "December 1, 2019"
+output: pdf_document
+---
+
+```{r}
+
+#purl("insight.Rmd", output = "part1.r")
+#source(part1.r)
+```
+
+### 2. Model Planning and Building
+
+Yes. No. Maybe. I don't know can you repeat the question?
+
+
+### 3. Results and Operationalization
+
+Coming soon...
