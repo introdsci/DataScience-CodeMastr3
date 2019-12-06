@@ -15,6 +15,8 @@ output: pdf_document
 
 Some predictions I would like to make from my model are how certain groups of people answered on the survey or where they stand politically or economically. In the previous rmd I attempted to show how you could set a number of parameters like sex and how they answered a certain question to see how many people fit those criteria. You could then take the percentage total of all or of that specific sex or whatever criteria you specified.
 
+As an example I did that I added that to my first portfolio at the end. I took the percentage of males that took the survey. I took the percentage of males and that answered "worse" for question 44 from the total survey and I took the percentage of the same out of the total of males.
+
 These predictions could matter because it can show biases within certain groups and potentially how to fix those biases. If a group of uneducated people have a certain bias to things you could say that with education people are less likely to vote or answer questions that certain way.
 
 ### 3. Results and Operationalization
