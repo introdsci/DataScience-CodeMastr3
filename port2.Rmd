@@ -7,7 +7,7 @@ output: pdf_document
 
 ```{r}
 
-#purl("insight.Rmd", output = "part1.r")
+purl("insight.Rmd", output = "part1.r")
 #source(part1.r)
 ```
 
