@@ -12,7 +12,7 @@ For example if the results showed no real connection between the different varia
   
 Although if it showed that a certain education level influenced your political standing or economic level with a value of, say for example, p < .05 then we can look at how it affects it and if it's a good thing like "The more educated people are the more money they have/can make" We can do things like making school easier to go to. Some examples would be free food for children that need it. Lower what qualifies as "need". Make higher education free. Give more resources to teachers so they can educate better. Lower the ratio of students to teachers for more focused learning.
 
-
+I currently can't think of any major unexpected consequences. Funding should be fine because even if teachers only get like $5 per student that doesn't add up to a lot and if funding gets big defund some things like the military.
 
 ```{r}
 
@@ -22,3 +22,4 @@ invisible(source("part2.r"))
 
 ```
 
+This is where I would have code but I got stuck with code in portfolio part 2
