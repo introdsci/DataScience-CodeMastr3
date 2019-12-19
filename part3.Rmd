@@ -1,0 +1,17 @@
+---
+title: "Trifecta of Personality (Part 3)"
+subtitle: Cody's Data Science Portfolio
+output: pdf_document
+---
+
+
+
+
+```{r}
+
+suppressMessages(library("knitr"))
+invisible(purl("part2.Rmd", output = "part2.r"))
+invisible(source("part2.r"))
+
+```
+
