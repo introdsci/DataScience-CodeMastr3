@@ -4,6 +4,13 @@ subtitle: Cody's Data Science Portfolio
 output: pdf_document
 ---
 
+### 3. Results and Operationalization
+
+I would be looking over the results and how to operate on the findings. I can talk about how that would have looked like and what we could do though.
+
+For example if the results showed no real connection between the different variables then there would be no action we could take. We would have to change what exactly we are looking for and change variables we are looking at. Or potentially find a hidden variable that connects these three different things.  
+  
+Although if it showed that a certain education level influenced your political standing or economic level with a value of, say for example, p < .05 then we can look at how it affects it and if it's a good thing like "The more educated people are the more money they have/can make" We can do things like making school easier to go to. Some examples would be free food for children that need it. Lower what qualifies as "need". Make higher education free. Give more resources to teachers so they can educate better. Lower the ratio of students to teachers for more focused learning.
 
 
 
